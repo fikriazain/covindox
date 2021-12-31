@@ -11,6 +11,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:covindox_flutter/kalender/jadwal.dart';
 import 'Article/awal.dart';
+import 'package:covindox_flutter/randomgenerator/randomLanding.dart';
 
 class Session extends StatefulWidget {
   const Session({Key? key}) : super(key: key);
@@ -26,6 +27,7 @@ class _MainSession extends State<Session> {
     JadwalApp(),
     Awalan(),
     Profile(),
+    randomLanding(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -55,7 +57,11 @@ class _MainSession extends State<Session> {
           BottomNavigationBarItem(
               icon: Icon(Icons.announcement_rounded, size: 50.0),
               tooltip: "News",
-              title: Text("News"))
+              title: Text("News")),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.emoji_people_rounded, size: 50.0),
+              tooltip: "Cheer Up",
+              title: Text("Cheer Up")),
         ],
         backgroundColor: HexColor("#18f4b4"),
         unselectedItemColor: Colors.white,
