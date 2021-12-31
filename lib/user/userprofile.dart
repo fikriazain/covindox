@@ -36,16 +36,16 @@ class UserData {
     if (json["fullname"] != null) {
       fullname = json["fullname"];
     }
-    if (json["bod"] != null) {
+    if (json["phone"] != null) {
       phone = json["phone"];
     }
-    if (json["phone"] != null) {
+    if (json["address"] != null) {
       address = json["address"];
     }
-    if (json["province"] != null) {
+    if (json["vaksin1"] != null) {
       vaksin1 = json["vaksin1"];
     }
-    if (json["address"] != null) {
+    if (json["vaksin2"] != null) {
       vaksin2 = json["vaksin2"];
     }
 
