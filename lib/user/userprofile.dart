@@ -243,7 +243,7 @@ class UserProfile extends State<Profile> {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => UserPage()),
+                        MaterialPageRoute(builder: (context) => Session()),
                       );
                     },
                     color: HexColor("#F07788"),
