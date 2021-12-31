@@ -1,3 +1,4 @@
+import 'package:covindox_flutter/randomgenerator/randomLanding.dart';
 import 'package:covindox_flutter/registervaccine/checker.dart';
 import 'package:covindox_flutter/registervaccine/form.dart';
 import 'package:covindox_flutter/registervaccine/showresult.dart';
@@ -23,6 +24,7 @@ class _MainSession extends State<Session> {
     Profile(),
     Profile(),
     Profile(),
+    randomLanding(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -52,7 +54,11 @@ class _MainSession extends State<Session> {
           BottomNavigationBarItem(
               icon: Icon(Icons.announcement_rounded, size: 50.0),
               tooltip: "News",
-              title: Text("News"))
+              title: Text("News")),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.emoji_people_rounded, size: 50.0),
+              tooltip: "Cheer Up",
+              title: Text("Cheer Up")),
         ],
         backgroundColor: HexColor("#18f4b4"),
         unselectedItemColor: Colors.white,

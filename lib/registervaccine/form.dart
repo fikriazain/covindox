@@ -21,7 +21,7 @@ Future<http.Response> updateDataPendaftar(
     String nama,
     String usia) {
   return http.post(
-    Uri.parse('https://covindox.herokuapp.com/registervaccine/dataapi'),
+    Uri.parse('http://localhost:8000/registervaccine/dataapi'),
     headers: <String, String>{
       'Content-Type': 'application/json; charset=UTF-8',
     },

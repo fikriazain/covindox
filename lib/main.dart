@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_new
+
 import 'package:covindox_flutter/auth_user.dart';
 import 'package:covindox_flutter/user/userprofile.dart';
 import 'package:flutter/material.dart';
@@ -6,6 +8,8 @@ import 'package:hexcolor/hexcolor.dart';
 import 'package:provider/provider.dart';
 import 'user/login.dart';
 import 'user/register.dart';
+
+import 'package:covindox_flutter/randomgenerator/randomLanding.dart';
 
 void main() {
   runApp(myApp());
